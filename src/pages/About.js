@@ -15,13 +15,13 @@ export default function About() {
           <div class="menu_section">
             <ul>
               <li>
-                <a href="index.html">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
                 <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="services.html">Services</a>
+                <Link to="/services">Services</Link>
               </li>
               <li>
                 <Link to="/contact">Contact us</Link>

@@ -53,7 +53,7 @@ export default function Homepage() {
             </div>
           </header>
           {/* <!-- End header -->
-         <!-- Start Banner --> */}
+        <!-- Start Banner --> */}
           <div class="ulockd-home-slider">
             <div class="container-fluid">
               <div class="row">
@@ -61,7 +61,31 @@ export default function Homepage() {
                   <div
                     class="pogoSlider-slide"
                     style={{
-                      backgroundImage: 'url(assets/images/slider_1.jpg)',
+                      backgroundImage: 'url(assets/images/banner/1-01.png)',
+                      backgroundSize: 'contain',
+                    }}
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="slide_text">
+                            <h6>Grow your business</h6>
+                            <h3>with</h3>
+                            <h4>Rodhi</h4>
+                            <br />
+                            <a class="readmore_bt" href="about.html">
+                              Read More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="pogoSlider-slide"
+                    style={{
+                      backgroundImage: 'url(assets/images/banner/2-02.png)',
+                      backgroundSize: 'contain',
                     }}
                   >
                     <div class="container">
@@ -83,7 +107,8 @@ export default function Homepage() {
                   <div
                     class="pogoSlider-slide"
                     style={{
-                      backgroundImage: 'url(assets/images/slider_1.jpg)',
+                      backgroundImage: 'url(assets/images/banner/3-03.png)',
+                      backgroundSize: 'contain',
                     }}
                   >
                     <div class="container">
@@ -105,7 +130,31 @@ export default function Homepage() {
                   <div
                     class="pogoSlider-slide"
                     style={{
-                      backgroundImage: 'url(assets/images/slider_1.jpg)',
+                      backgroundImage: 'url(assets/images/banner/4-04.png)',
+                      backgroundSize: 'contain',
+                    }}
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="slide_text">
+                            <h6>Grow your business</h6>
+                            <h3>with</h3>
+                            <h4>Rodhi</h4>
+                            <br />
+                            <a class="readmore_bt" href="about.html">
+                              Read More
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="pogoSlider-slide"
+                    style={{
+                      backgroundImage: 'url(assets/images/banner/5-05.png)',
+                      backgroundSize: 'contain',
                     }}
                   >
                     <div class="container">
@@ -137,7 +186,7 @@ export default function Homepage() {
                 <div class="col-md-12">
                   <div class="full">
                     <div class="heading_main text_align_center">
-                      <h2>What We Do</h2>
+                      <h2>Our Clients</h2>
                     </div>
                   </div>
                 </div>
@@ -355,47 +404,7 @@ export default function Homepage() {
             </div>
           </div>
           {/* <!-- end section -->
-         <!-- section --> */}
-          <div class="section dark_blue_layout white_fonts layout_padding">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12 col-lg-4">
-                  <div class="full">
-                    <div
-                      class="heading_main text_align_left"
-                      style={{ marginBottom: '0' }}
-                    >
-                      <h2>
-                        <strong class="small">Get your free quote</strong>
-                        <br />
-                        Today
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-12 col-lg-8">
-                  <div class="full">
-                    <div class="form_section">
-                      <form class="news_submit_form">
-                        <fieldset>
-                          <div class="field">
-                            <input
-                              type="email"
-                              placeholder="Enter url"
-                              name="#"
-                              required
-                            />
-                            <button>Submit</button>
-                          </div>
-                        </fieldset>
-                      </form>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <!-- end section -->
+         
          <!-- section --> */}
           <div class="section about_section layout_padding">
             <div class="container">
