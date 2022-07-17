@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import ServiceComponent from '../components/ServiceComponent';
+import Services from '../components/ServiceComponent';
 export default function Homepage() {
   return (
     <>
@@ -36,11 +38,15 @@ export default function Homepage() {
                 <div class="col-sm-6">
                   <div class="logo_main">
                     <a href="index.html">
-                      <img src="assets/images/main_logo.png" alt="" />
+                      <img
+                        src="assets/images/main_logo.png"
+                        alt=""
+                        style={{ height: '180px', width: '350px' }}
+                      />
                     </a>
                   </div>
                 </div>
-                <div class="col-sm-6">
+                {/* <div class="col-sm-6">
                   <button
                     type="button"
                     id="sidebarCollapse"
@@ -48,7 +54,7 @@ export default function Homepage() {
                   >
                     <img src="assets/images/menu_icon.png" alt="" />
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </header>
@@ -62,20 +68,20 @@ export default function Homepage() {
                     class="pogoSlider-slide"
                     style={{
                       backgroundImage: 'url(assets/images/banner/1-01.png)',
-                      backgroundSize: 'contain',
+                      backgroundSize: 'cover',
                     }}
                   >
                     <div class="container">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="slide_text">
-                            <h6>Grow your business</h6>
-                            <h3>with</h3>
-                            <h4>Rodhi</h4>
+                            <h4>We</h4>
+                            {/* <h3>with</h3> */}
+                            <h4>Source</h4>
                             <br />
-                            <a class="readmore_bt" href="about.html">
+                            {/* <a class="readmore_bt" href="about.html">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -85,20 +91,20 @@ export default function Homepage() {
                     class="pogoSlider-slide"
                     style={{
                       backgroundImage: 'url(assets/images/banner/2-02.png)',
-                      backgroundSize: 'contain',
+                      backgroundSize: 'cover',
                     }}
                   >
                     <div class="container">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="slide_text">
-                            <h6>Grow your business</h6>
-                            <h3>Digital</h3>
-                            <h4>Marketing</h4>
+                            <h4>We</h4>
+                            {/* <h3>with</h3> */}
+                            <h4>Import</h4>
                             <br />
-                            <a class="readmore_bt" href="about.html">
+                            {/* <a class="readmore_bt" href="about.html">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -108,20 +114,20 @@ export default function Homepage() {
                     class="pogoSlider-slide"
                     style={{
                       backgroundImage: 'url(assets/images/banner/3-03.png)',
-                      backgroundSize: 'contain',
+                      backgroundSize: 'cover',
                     }}
                   >
                     <div class="container">
                       <div class="row">
                         <div class="col-md-12">
                           <div class="slide_text">
-                            <h6>Grow your business</h6>
-                            <h3>Digital</h3>
-                            <h4>Marketing</h4>
+                            <h4>We</h4>
+                            {/* <h3>with</h3> */}
+                            <h4>Deliver</h4>
                             <br />
-                            <a class="readmore_bt" href="about.html">
+                            {/* <a class="readmore_bt" href="about.html">
                               Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -131,7 +137,30 @@ export default function Homepage() {
                     class="pogoSlider-slide"
                     style={{
                       backgroundImage: 'url(assets/images/banner/4-04.png)',
-                      backgroundSize: 'contain',
+                      backgroundSize: 'cover',
+                    }}
+                  >
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <div class="slide_text">
+                            <h4>We help you</h4>
+                            {/* <h3>with</h3> */}
+                            <h4>To sell</h4>
+                            <br />
+                            {/* <a class="readmore_bt" href="about.html">
+                              Read More
+                            </a> */}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="pogoSlider-slide"
+                    style={{
+                      backgroundImage: 'url(assets/images/banner/5-05.png)',
+                      backgroundSize: 'cover',
                     }}
                   >
                     <div class="container">
@@ -142,32 +171,9 @@ export default function Homepage() {
                             <h3>with</h3>
                             <h4>Rodhi</h4>
                             <br />
-                            <a class="readmore_bt" href="about.html">
+                            {/* <a class="readmore_bt" href="about.html">
                               Read More
-                            </a>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="pogoSlider-slide"
-                    style={{
-                      backgroundImage: 'url(assets/images/banner/5-05.png)',
-                      backgroundSize: 'contain',
-                    }}
-                  >
-                    <div class="container">
-                      <div class="row">
-                        <div class="col-md-12">
-                          <div class="slide_text">
-                            <h6>Grow your business</h6>
-                            <h3>Digital</h3>
-                            <h4>Marketing</h4>
-                            <br />
-                            <a class="readmore_bt" href="about.html">
-                              Read More
-                            </a>
+                            </a> */}
                           </div>
                         </div>
                       </div>
@@ -179,125 +185,10 @@ export default function Homepage() {
             </div>
           </div>
           {/* <!-- End Banner -->
-         <!-- section --> */}
-          <div class="section about_section layout_padding dash_bg">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="full">
-                    <div class="heading_main text_align_center">
-                      <h2>Our Clients</h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                  <div class="full feature_box">
-                    <div class="full icon">
-                      <img
-                        class="default-block"
-                        src="assets/images/icon_1.png"
-                        alt="#"
-                      />
-                      <img
-                        class="default-none"
-                        src="assets/images/icon_1w.png"
-                        alt="#"
-                      />
-                    </div>
-                    <div class="full">
-                      <h4>Link Building</h4>
-                    </div>
-                    <div class="full">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                  <div class="full feature_box">
-                    <div class="full icon">
-                      <img
-                        class="default-block"
-                        src="assets/images/icon_2.png"
-                        alt="#"
-                      />
-                      <img
-                        class="default-none"
-                        src="assets/images/icon_2w.png"
-                        alt="#"
-                      />
-                    </div>
-                    <div class="full">
-                      <h4>Monthly SEO Task</h4>
-                    </div>
-                    <div class="full">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                  <div class="full feature_box">
-                    <div class="full icon">
-                      <img
-                        class="default-block"
-                        src="assets/images/icon_3.png"
-                        alt="#"
-                      />
-                      <img
-                        class="default-none"
-                        src="assets/images/icon_3w.png"
-                        alt="#"
-                      />
-                    </div>
-                    <div class="full">
-                      <h4>On Page SEO</h4>
-                    </div>
-                    <div class="full">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
-                  <div class="full feature_box">
-                    <div class="full icon">
-                      <img
-                        class="default-block"
-                        src="assets/images/icon_4.png"
-                        alt="#"
-                      />
-                      <img
-                        class="default-none"
-                        src="assets/images/icon_4w.png"
-                        alt="#"
-                      />
-                    </div>
-                    <div class="full">
-                      <h4>Online marketing</h4>
-                    </div>
-                    <div class="full">
-                      <p>
-                        It is a long established fact that a reader will be
-                        distracted by the readable content..
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+         <!-- section --> * FOR CLIENTS */}
           {/* <!-- end section -->
          <!-- section --> */}
-          <div class="section about_section layout_padding padding_top_0">
+          <div class="section about_section layout_padding padding_top_5">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -305,10 +196,11 @@ export default function Homepage() {
                     <div class="heading_main text_align_center">
                       <h2 class="margin-bottom_30">
                         <strong class="small theme_color">
-                          Increase your client for
+                          Sourcing and importing goods from China is simple and
+                          efficient
                         </strong>
                         <br />
-                        Better position of Business
+                        WITH RODHI
                       </h2>
                     </div>
                   </div>
@@ -318,35 +210,32 @@ export default function Homepage() {
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                   <div class="full">
                     <div class="heading_small">
-                      <h4>Increase your client</h4>
+                      <h4>About us</h4>
                     </div>
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a pass
-                      <br />
-                      <br />
-                      age of Lorem Ipsum, you need to be sure there isn'There
-                      are many variations of passages of Lorem Ipsum available,
-                      but the majority have suffered alteration in some form, by
-                      injected humour, or randomised words which don't look even
-                      slightly believable. If you are going to use a passage of
-                      Lorem Ipsum, you need to be sure there isn
+                    <p style={{ fontSize: '1.2rem' }}>
+                      Rodhi, a young and experienced China sourcing company,
+                      helps you in locating the ideal products for the Nepali
+                      market, the best manufacturers, reasonable rates,
+                      follow-up manufacturing, quality inspection, and delivery
+                      to your door or warehouse. We will also keep you informed
+                      of any future new goods, specials, or other types of
+                      offers that may be of interest to you. Not only do we
+                      assist you in building your brand on the digital platform
+                      by providing digital marketing services. Start Sourcing
+                      with us..
                     </p>
                   </div>
-                  <div class="full margin-top_30">
+                  {/* <div class="full margin-top_30">
                     <a class="readmore_bt" href="about.html">
                       Read More
                     </a>
-                  </div>
+                  </div> */}
                 </div>
                 <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
                   <div class="full text_align_center">
                     <img
                       class="img-responsive"
-                      src="assets/images/f1.png"
+                      src="assets/images/services/product_sourcing.png"
                       alt="#"
                     />
                   </div>
@@ -364,24 +253,18 @@ export default function Homepage() {
                     <div class="heading_main text_align_center margin-bottom_30">
                       <h2>
                         <strong class="small theme_color">
-                          Previous Projects
+                          Are You a person or a business looking for an
+                          outsourcer to import products from China with no
+                          hassle, or do you want to expand your import business?
                         </strong>
                         <br />
-                        Our Case Studies
                       </h2>
                     </div>
-                  </div>
-                </div>
-                <div class="col-lg-10 offset-lg-1">
-                  <div class="full text_align_center">
-                    <p>
-                      There are many variations of passages of Lorem Ipsum
-                      available, but the majority have suffered alteration in
-                      some form, by injected humour, or randomised words which
-                      don't look even slightly believable. If you are going to
-                      use a passage of Lorem Ipsum, you need to be sure there
-                      isn'
-                    </p>
+                    <div class="full center">
+                      <a class="readmore_bt" href="about.html">
+                        Let's Talk
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -390,7 +273,7 @@ export default function Homepage() {
                   <div class="full text_align_center">
                     <img
                       class="img-responsive"
-                      src="assets/images/video_img.jpg"
+                      src="assets/images/map.gif"
                       alt="#"
                     />
                   </div>
@@ -404,9 +287,8 @@ export default function Homepage() {
             </div>
           </div>
           {/* <!-- end section -->
-         
-         <!-- section --> */}
-          <div class="section about_section layout_padding">
+          {/*<!-- section --> MISCELLANEOUS*/}
+          {/* <div class="section about_section layout_padding">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -477,86 +359,203 @@ export default function Homepage() {
                 </div>
               </div>
             </div>
-          </div>
-          {/* <!-- end section -->
-         <!-- section --> */}
-          <div class="section about_section layout_padding padding_top_0">
-            <div class="row">
-              <div class="col-md-12">
-                <div class="full">
-                  <div class="heading_main text_align_center margin-bottom_30">
-                    <h2>Get in touch</h2>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          {/* <!-- section --> */}
-          <div class="section contact_section">
-            <div class="container-fluid">
+          </div> */}
+          {/* <!-- end section -->*/}
+          <div class="section about_section layout_padding dash_bg">
+            <div class="container">
               <div class="row">
-                <div class="col-md-6 theme_color_bg fc3726 padding_0">
+                <div class="col-md-12">
                   <div class="full">
-                    <div class="row">
-                      <div class="col-sm-12 col-md-10 offset-lg-1">
-                        <div class="full contact_form">
-                          <form class="contact_form_inner" action="#">
-                            <fieldset>
-                              <div class="field">
-                                <input
-                                  type="text"
-                                  name="name"
-                                  placeholder="Your name"
-                                />
-                              </div>
-                              <div class="field">
-                                <input
-                                  type="email"
-                                  name="email"
-                                  placeholder="Email"
-                                />
-                              </div>
-                              <div class="field">
-                                <input
-                                  type="text"
-                                  name="phone_no"
-                                  placeholder="Phone number"
-                                />
-                              </div>
-                              <div class="field">
-                                <textarea placeholder="Message"></textarea>
-                              </div>
-                              <div class="field center">
-                                <button class="margin-top_30">SEND</button>
-                              </div>
-                            </fieldset>
-                          </form>
-                        </div>
-                      </div>
+                    <div class="heading_main text_align_center">
+                      <h2>Our Services</h2>
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 padding_0">
-                  <div class="full">
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <div class="full map_section">
-                          <div id="map">
-                            <div
-                              id="googleMap"
-                              style={{ width: '100%', height: '440px' }}
-                            ></div>
-                          </div>
-                        </div>
-                      </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        class="default-block"
+                        src="assets/images/services/build_own_brand.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                      <img
+                        class="default-none"
+                        src="assets/images/services/build_own_brand.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Product Sourcing</h4>
+                    </div>
+                    <div class="full">
+                      <p>
+                        Once you submit your inquiry, our specialist research
+                        team in China, which has been sourcing for over ten
+                        years, will find the proper manufacturer for you through
+                        our supply channel and notify you within one business
+                        day.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        class="default-block"
+                        src="assets/images/services/digital_marketing_services.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                      <img
+                        class="default-none"
+                        src="assets/images/services/digital_marketing_services.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Digital Marketing</h4>
+                    </div>
+                    <div class="full">
+                      <p>
+                        To help you grow your business, we provide digital
+                        marketing services such as branding, design, social
+                        marketing, web design, and SEO. We assist you in
+                        developing a strong strategy as well as your company's
+                        brand identity.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        class="default-block"
+                        src="assets/images/services/competitive_price.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                      <img
+                        class="default-none"
+                        src="assets/images/services/competitive_price.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Competitive Pricing</h4>
+                    </div>
+                    <div class="full">
+                      <p>
+                        Our expert team advises you in choosing the right
+                        products at the best price on the market; we negotiate
+                        with suppliers on your behalf and always look for the
+                        lowest price possible to enhance profits.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        class="default-block"
+                        src="assets/images/services/transport_customer.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                      <img
+                        class="default-none"
+                        src="assets/images/services/transport_customer.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Transport and Customs</h4>
+                    </div>
+                    <div class="full">
+                      <p>
+                        We understand how important it is to get the cargo on
+                        time and how difficult it is to go through customs while
+                        importing, therefore we focus on making it as quick and
+                        painless as possible.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="col-xs-6 col-sm-6 col-md-6 col-lg-3"
+                  style={{ marginLeft: '17.8rem' }}
+                >
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        class="default-block"
+                        src="assets/images/services/product_sourcing.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                      <img
+                        class="default-none"
+                        src="assets/images/services/product_sourcing.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Build Your Brand</h4>
+                    </div>
+                    <div class="full">
+                      <p>
+                        We offer specialized and tailored services such as OEM,
+                        ODM, White labeling, package design, logo print, factory
+                        audit, and sample consolidation.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        class="default-block"
+                        src="assets/images/services/quality_check.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                      <img
+                        class="default-none"
+                        src="assets/images/services/quality_check.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Quality Checking</h4>
+                    </div>
+                    <div class="full">
+                      <p>
+                        With our team in China, we will verify that the products
+                        are the same as what you ordered and are in the best
+                        possible quality and safe condition.
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- end section -->
-         <!-- Start Footer --> */}
+
+          {/* <!-- section --> FOR FORM AND LOCATION*/}
+          {/*<!-- Start Footer --> */}
           <footer class="footer-box">
             <div class="container">
               <div class="row">
