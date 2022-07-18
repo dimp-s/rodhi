@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ServiceComponent from '../components/ServiceComponent';
-import Services from '../components/ServiceComponent';
+
 export default function Homepage() {
   return (
     <>
@@ -185,67 +184,74 @@ export default function Homepage() {
             </div>
           </div>
           {/* <!-- End Banner -->
+         
          <!-- section --> * FOR CLIENTS */}
-          {/* <!-- end section -->
-         <!-- section --> */}
-          <div class="section about_section layout_padding padding_top_5">
+          {/*SERVICES*/}
+          <div class="section about_section layout_padding dash_bg padding_top_5">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
                   <div class="full">
                     <div class="heading_main text_align_center">
-                      <h2 class="margin-bottom_30">
-                        <strong class="small theme_color">
-                          Sourcing and importing goods from China is simple and
-                          efficient
-                        </strong>
-                        <br />
-                        WITH RODHI
-                      </h2>
+                      <h2>Our Clients</h2>
                     </div>
                   </div>
                 </div>
               </div>
               <div class="row">
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                  <div class="full">
-                    <div class="heading_small">
-                      <h4>About us</h4>
+                <div
+                  class="col-xs-6 col-sm-6 col-md-6 col-lg-3"
+                  style={{ marginLeft: '6rem' }}
+                >
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        src="assets/images/clients/tuddrom.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
                     </div>
-                    <p style={{ fontSize: '1.2rem' }}>
-                      Rodhi, a young and experienced China sourcing company,
-                      helps you in locating the ideal products for the Nepali
-                      market, the best manufacturers, reasonable rates,
-                      follow-up manufacturing, quality inspection, and delivery
-                      to your door or warehouse. We will also keep you informed
-                      of any future new goods, specials, or other types of
-                      offers that may be of interest to you. Not only do we
-                      assist you in building your brand on the digital platform
-                      by providing digital marketing services. Start Sourcing
-                      with us..
-                    </p>
+                    <div class="full">
+                      <h4>Tuddrom</h4>
+                    </div>
                   </div>
-                  {/* <div class="full margin-top_30">
-                    <a class="readmore_bt" href="about.html">
-                      Read More
-                    </a>
-                  </div> */}
                 </div>
-                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                  <div class="full text_align_center">
-                    <img
-                      class="img-responsive"
-                      src="assets/images/services/product_sourcing.png"
-                      alt="#"
-                    />
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-4">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        src="assets/images/clients/felt-and-yarn.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '15rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>Felt & Yarn</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-3">
+                  <div class="full feature_box">
+                    <div class="full icon">
+                      <img
+                        src="assets/images/clients/ytech.png"
+                        alt="#"
+                        style={{ height: '12rem', width: '12rem' }}
+                      />
+                    </div>
+                    <div class="full">
+                      <h4>YTech</h4>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+
           {/* <!-- end section -->
-         <!-- section --> */}
-          <div class="section about_section layout_padding padding_top_0">
+
+          <!-- section --> */}
+          <div class="section about_section layout_padding padding_top_5">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -270,98 +276,38 @@ export default function Homepage() {
               </div>
               <div class="row">
                 <div class="col-md-12">
-                  <div class="full text_align_center">
+                  <div class="full text_align_center padding_top_0">
                     <img
                       class="img-responsive"
                       src="assets/images/map.gif"
                       alt="#"
                     />
-                  </div>
-                  <div class="full center">
-                    <a class="readmore_bt" href="about.html">
-                      Read More
-                    </a>
+                    <img
+                      class="img-responsive"
+                      src="assets/images/experience.gif"
+                      alt="#"
+                    />{' '}
+                    + Years of experience
+                    <img
+                      class="img-responsive"
+                      src="assets/images/growing-business.gif"
+                      alt="#"
+                    />{' '}
+                    + Growing Businesses
+                    <img
+                      class="img-responsive"
+                      src="assets/images/export-team.gif"
+                      alt="#"
+                    />
+                    {` `}+ Export Team Members
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          {/* <!-- end section -->
-          {/*<!-- section --> MISCELLANEOUS*/}
-          {/* <div class="section about_section layout_padding">
-            <div class="container">
-              <div class="row">
-                <div class="col-md-12">
-                  <div class="full">
-                    <div class="heading_main text_align_center margin-bottom_30">
-                      <h2>
-                        <strong class="small theme_color">
-                          We’ve done lot’s of work, Let’s
-                        </strong>
-                        <br />
-                        Check some from here
-                      </h2>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                  <div class="work_blog margin-top_30">
-                    <img
-                      class="img-responsive"
-                      src="assets/images/blog1.jpg"
-                      alt="#"
-                    />
-                    <div class="hover_workblog">
-                      <img src="assets/images/search_icon.png" alt="#" />
-                    </div>
-                  </div>
-                </div>
 
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                  <div class="work_blog margin-top_30">
-                    <img
-                      class="img-responsive"
-                      src="assets/images/blog2.jpg"
-                      alt="#"
-                    />
-                    <div class="hover_workblog">
-                      <img src="assets/images/search_icon.png" alt="#" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                  <div class="work_blog margin-top_30">
-                    <img
-                      class="img-responsive"
-                      src="assets/images/blog3.jpg"
-                      alt="#"
-                    />
-                    <div class="hover_workblog">
-                      <img src="assets/images/search_icon.png" alt="#" />
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-sm-6 col-md-3 col-lg-3">
-                  <div class="work_blog margin-top_30">
-                    <img
-                      class="img-responsive"
-                      src="assets/images/blog4.jpg"
-                      alt="#"
-                    />
-                    <div class="hover_workblog">
-                      <img src="assets/images/search_icon.png" alt="#" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> */}
-          {/* <!-- end section -->*/}
-          <div class="section about_section layout_padding dash_bg">
+          {/*SERVICES*/}
+          <div class="section about_section layout_padding dash_bg padding_top_0">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -553,7 +499,139 @@ export default function Homepage() {
               </div>
             </div>
           </div>
+          {/*End SERVICES*/}
 
+          {/* <!-- section -->  */}
+          <div class="section about_section layout_padding padding_top_5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="full">
+                    <div class="heading_main text_align_center">
+                      <h2 class="margin-bottom_30">
+                        <strong class="small theme_color">
+                          Sourcing and importing goods from China is simple and
+                          efficient
+                        </strong>
+                        <br />
+                        WITH RODHI
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="full">
+                    <div class="heading_small">
+                      <h4>About us</h4>
+                    </div>
+                    <p style={{ fontSize: '1.2rem' }}>
+                      Rodhi, a young and experienced China sourcing company,
+                      helps you in locating the ideal products for the Nepali
+                      market, the best manufacturers, reasonable rates,
+                      follow-up manufacturing, quality inspection, and delivery
+                      to your door or warehouse. We will also keep you informed
+                      of any future new goods, specials, or other types of
+                      offers that may be of interest to you. Not only do we
+                      assist you in building your brand on the digital platform
+                      by providing digital marketing services. Start Sourcing
+                      with us..
+                    </p>
+                  </div>
+                  {/* <div class="full margin-top_30">
+                    <a class="readmore_bt" href="about.html">
+                      Read More
+                    </a>
+                  </div> */}
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                  <div class="full text_align_center">
+                    <img
+                      class="img-responsive"
+                      src="assets/images/services/product_sourcing.png"
+                      alt="#"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* <!-- end section -->
+          {/*<!-- section --> MISCELLANEOUS*/}
+          {/* <div class="section about_section layout_padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="full">
+                    <div class="heading_main text_align_center margin-bottom_30">
+                      <h2>
+                        <strong class="small theme_color">
+                          We’ve done lot’s of work, Let’s
+                        </strong>
+                        <br />
+                        Check some from here
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                  <div class="work_blog margin-top_30">
+                    <img
+                      class="img-responsive"
+                      src="assets/images/blog1.jpg"
+                      alt="#"
+                    />
+                    <div class="hover_workblog">
+                      <img src="assets/images/search_icon.png" alt="#" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                  <div class="work_blog margin-top_30">
+                    <img
+                      class="img-responsive"
+                      src="assets/images/blog2.jpg"
+                      alt="#"
+                    />
+                    <div class="hover_workblog">
+                      <img src="assets/images/search_icon.png" alt="#" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                  <div class="work_blog margin-top_30">
+                    <img
+                      class="img-responsive"
+                      src="assets/images/blog3.jpg"
+                      alt="#"
+                    />
+                    <div class="hover_workblog">
+                      <img src="assets/images/search_icon.png" alt="#" />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-sm-6 col-md-3 col-lg-3">
+                  <div class="work_blog margin-top_30">
+                    <img
+                      class="img-responsive"
+                      src="assets/images/blog4.jpg"
+                      alt="#"
+                    />
+                    <div class="hover_workblog">
+                      <img src="assets/images/search_icon.png" alt="#" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div> */}
+          {/* <!-- end section -->*/}
           {/* <!-- section --> FOR FORM AND LOCATION*/}
           {/*<!-- Start Footer --> */}
           <footer class="footer-box">
@@ -574,11 +652,9 @@ export default function Homepage() {
                       Address
                       <br />
                       <small>
-                        151 Ho Ba Kien Street,
+                        Tinkune near Tribhuwan International Airport ,
                         <br />
-                        Ward 15, District 10,
-                        <br />
-                        Ho Chi Minh City, Vietnam
+                        Kathmandu, Nepal
                       </small>
                     </p>
                   </div>
@@ -590,11 +666,11 @@ export default function Homepage() {
                       Phone
                       <br />
                       <small>
-                        +84 126 922 0162
+                        +977-9851325806
                         <br />
-                        +84 905 333 333
+                        +977-9804360634
                         <br />
-                        Monday - Sunday
+                        Sunday - Friday
                         <br />
                         08:00 am - 05:00 pm
                       </small>
@@ -608,7 +684,7 @@ export default function Homepage() {
                       Email
                       <br />
                       <small>
-                        support@sofbox.com
+                        rodhisources@gmail.com
                         <br />
                         24 X 7 online support
                       </small>
@@ -622,28 +698,18 @@ export default function Homepage() {
                     <p>
                       <ul>
                         <li>
-                          <a href="">
+                          <a href="https://www.facebook.com/Rodhi-Import-Export">
                             <i class="fa fa-facebook-f"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="">
-                            <i class="fa fa-twitter"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
+                          <a href="rodhisources@gmail.com">
                             <i class="fa fa-google-plus"></i>
                           </a>
                         </li>
                         <li>
-                          <a href="">
-                            <i class="fa fa-linkedin"></i>
-                          </a>
-                        </li>
-                        <li>
-                          <a href="">
-                            <i class="fa fa-youtube"></i>
+                          <a href="https://www.instagram.com/rodhi.sources/">
+                            <i class="fa fa-instagram"></i>
                           </a>
                         </li>
                       </ul>
@@ -658,15 +724,7 @@ export default function Homepage() {
             <div class="container">
               <div class="row">
                 <div class="col-12">
-                  <p class="crp">
-                    © Copyrights 2019 design by{' '}
-                    <a
-                      href="https://html.design"
-                      title="Free Website Templates"
-                    >
-                      Free Website Templates
-                    </a>
-                  </p>
+                  <p class="crp">© Copyrights 2022 Rodhi Sourcing co.</p>
                 </div>
               </div>
             </div>
